@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<head>
+    <title>Game Of Thrones</title>
+</head>
+
+<center>
+    <div class="alert alert-dismissible alert-warning">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h4 class="alert-heading">HEY!</h4>
+        <p class="mb-0">We don't talk about season 8</p>
+    </div>
+    <h1>Houses</h1>
+    <div class='house'>
+        <a href="/houses">
+            <img src="/static/images/got.jpg" alt="got">
+        </a>
+    </div><br>
+    <h1>Main Characters</h1>
+    <div class="row">
+        <div class="column">
+            <a href="/jon_snow">
+                <img src="/static/images/jonsnow.png" alt="Snow" style="width:100%">
+            </a>
+        </div>
+        <div class="column">
+            <a href="/daenerys_targaryen">
+                <img src="/static/images/danny.jpg" alt="Fire" style="width:100%">
+            </a>
+        </div>
+    </div>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TZE9gVF1QbA" allowfullscreen></iframe>
+    </div>
+</center>
+
+
+{% endblock %}
